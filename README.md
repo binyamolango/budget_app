@@ -24,7 +24,7 @@
 
 # 📖 Recipe App <a name="about-project"></a>
 
-**Recipe App** is an app that keeps track of all users' recipes, ingredients, and inventory. It will allow the user to save ingredients, keep track of what they have, create recipes, and generate a shopping list based on what the user has and missing from a recipe.
+**Recipe App** is a mobile web application where users can manage their budget: they have a list of transactions associated with a category so that they can see how much money they spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
