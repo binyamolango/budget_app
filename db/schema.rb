@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_05_165543) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_06_100140) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
     t.string "name", default: "", null: false
-    t.string "icon", default: "https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png"
+    t.string "icon", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
@@ -24,11 +24,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_165543) do
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
-  create_table "categories_records", id: false, force: :cascade do |t|
+  create_table "category_records", force: :cascade do |t|
     t.bigint "category_id", null: false
     t.bigint "record_id", null: false
-    t.index ["category_id"], name: "index_categories_records_on_category_id"
-    t.index ["record_id"], name: "index_categories_records_on_record_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_category_records_on_category_id"
+    t.index ["record_id"], name: "index_category_records_on_record_id"
   end
 
   create_table "records", force: :cascade do |t|
@@ -55,5 +57,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_165543) do
   end
 
   add_foreign_key "categories", "users", on_delete: :cascade
+  add_foreign_key "category_records", "categories"
+  add_foreign_key "category_records", "records"
   add_foreign_key "records", "users", column: "author_id", on_delete: :cascade
 end
