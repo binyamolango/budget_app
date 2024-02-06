@@ -1,5 +1,5 @@
 class Record < ApplicationRecord
-  belongs_to :user
+  belongs_to :author, class_name: 'User'
   has_many :categories
 
   validates :name, presence: true, length: { maximum: 250 }

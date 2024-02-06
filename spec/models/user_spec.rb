@@ -1,18 +1,20 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  user = User.create(name: "James White", email: "white@gmail.com", password: 123456);
+  before(:each) do
+    @user = User.create(name: "James White", email: "whitej@gmail.com", password: 123456);
+  end
 
   it "should have valid attributes" do
-    expect(user).to be_valid
+    expect(@user).to be_valid
   end
 
   it 'name should not be blank' do
-    user.name = nil
-    expect(user).to_not be_valid
+    @user.name = nil
+    expect(@user).to_not be_valid
   end
 
   it 'email should exist' do
-    expect(user.email).to eq 'white@gmail.com'
+    expect(@user.email).to eq 'whitej@gmail.com'
   end
 end

@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :categories
-  has_many :records, through: :categories
+  has_many :records, foreign_key: 'author_id', dependent: :destroy, inverse_of: 'author'
 
-  validates :name, presence: true
+  validates :name, presence: true, length: { maximum: 250 }
 end
