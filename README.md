@@ -1,4 +1,4 @@
-# Recipe App
+# Budget App
 
 <a name="readme-top"></a>
 
@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Recipe App <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
-**Recipe App** is an app that keeps track of all users' recipes, ingredients, and inventory. It will allow the user to save ingredients, keep track of what they have, create recipes, and generate a shopping list based on what the user has and missing from a recipe.
+**Budget App** is an app that keeps track of all users' Budgets, ingredients, and inventory. It will allow the user to save ingredients, keep track of what they have, create Budgets, and generate a shopping list based on what the user has and missing from a Budget.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,10 +41,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create recipes**
-- **Show the list of recipes**
-- **Show the list of foods**
-- **Generate a shopping list**
+- **Create category**
+- **Show the list of categories**
+- **Create records**
+- **Show the list of records for that category**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +69,7 @@ Clone this repository to your desired folder:
 ```sh
   cd my-preferred-folder
   
-  git clone https://github.com/binyamolango/recipe_app.git
+  git clone https://github.com/binyamolango/budget_app.git
 
 ```
 
@@ -78,7 +78,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd recipe_app
+  cd budget_app
   
   bundle install
 ```
@@ -117,11 +117,6 @@ To run tests, run the following command:
 
 - GitHub: [@binyamolango ](https://github.com/binyamolango)
 - LinkedIn: [Binyam Yohannes](https://www.linkedin.com/in/binyamyohannes/)
-
-👤 **Muhammad Bilal Liaquat**
-
-- GitHub: [@muhammadbilal ](https://github.com/BilalLiaquat7)
-- LinkedIn: [Muhammad Bilal](https://www.linkedin.com/in/muhammad-bilal-liaquat-87863390/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
