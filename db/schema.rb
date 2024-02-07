@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_06_100140) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
-    t.index ["name"], name: "index_categories_on_name", unique: true
+    t.index ["id"], name: "index_categories_on_id", unique: true
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_06_100140) do
     t.datetime "updated_at", null: false
     t.bigint "author_id", null: false
     t.index ["author_id"], name: "index_records_on_author_id"
-    t.index ["name"], name: "index_records_on_name", unique: true
+    t.index ["id"], name: "index_records_on_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|
