@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -45,6 +46,9 @@
 - **Show the list of categories**
 - **Create records**
 - **Show the list of records for that category**
+
+### Live Demo <a name="key-features"></a>
+- [Live Demo](https://edenic-budget-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
