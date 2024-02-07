@@ -1,10 +1,26 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
 
-<%= render @category %>
+  <div class="back">
+    <%= link_to "<", categories_path %>
+  </div>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
+  <h2 class="list blue">TRANSACTIONS</h2>
 
-  <%= button_to "Destroy this category", @category, method: :delete %>
+  <div class="list">
+    <h3><%= @category.name %></h3>
+    <p class="amount">$<%= @sum %></p>
+  </div>
+
+  <div class="sub-container">
+    <% @records.each do |record| %>
+      <div class="list">
+        <p class="category"><%= record.name %></p>
+        <p class="amount">$<%= record.amount %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="add-new">
+    <%= link_to "ADD A NEW TRANSACTION", new_category_record_path(@category) %>
+  </div>
 </div>

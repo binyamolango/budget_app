@@ -1,6 +1,4 @@
 class CategoriesController < ApplicationController
-  before_action :authenticate_user!
-
   load_and_authorize_resource
 
   before_action :set_category, only: %i[ show edit update destroy ]
@@ -12,6 +10,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
+    @records = @category.records.order(created_at: :desc)
+    @sum = @records.pluck(:amount).map(&:to_i).sum
   end
 
   # GET /categories/new

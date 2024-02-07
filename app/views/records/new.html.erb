@@ -1,9 +1,30 @@
-<h1>New record</h1>
+<div class="container">
+  <div class="back">
+    <%= link_to "<", category_path(@category) %>
+  </div>
 
-<%= render "form", record: @record %>
+	<h2 class="list blue">NEW TRANSACTION</h2>
+    
+  <div class="sub-container">
+    <%= form_with(model: @record, url: category_records_path(@category)) do |form| %>
+      <div>
+        <%= form.label :name, "Transaction name" %>
+        <%= form.text_field :name, class: "field", required: true %>
+      </div>
 
-<br>
+      <div>
+        <%= form.label :amount, class: "col-sm-2 col-form-label" %>
+        <%= form.number_field :amount, class: "field", required: true %>
+      </div>
 
-<div>
-  <%= link_to "Back to records", records_path %>
+      <div>
+        <%= form.label "Categories" %><br>
+        <%= form.collection_select(:category_ids, current_user.categories, :id, :name, {}, { multiple: true, class: "field", required: true }) %>
+      </div>
+
+      <div class="add-item">
+        <%= form.submit "ADD TRANSACTION", class: "add" %>
+      </div>
+    <% end %>
+  </div>
 </div>
