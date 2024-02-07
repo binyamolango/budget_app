@@ -8,7 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [Live Demo](#live-demo)
+  - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,7 +47,9 @@
 - **Create records**
 - **Show the list of records for that category**
 
-### Live Demo <a name="live-demo"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Live Demo <a name="live-demo"></a>
 - [Live Demo](https://edenic-budget-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
