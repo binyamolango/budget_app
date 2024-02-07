@@ -47,7 +47,7 @@
 - **Create records**
 - **Show the list of records for that category**
 
-### Live Demo <a name="key-features"></a>
+### Live Demo <a name="live-demo"></a>
 - [Live Demo](https://edenic-budget-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
