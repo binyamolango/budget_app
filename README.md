@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [Live Demo](#live-demo)
+  - [Loom Walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -51,6 +52,9 @@
 
 ## Live Demo <a name="live-demo"></a>
 - [Live Demo](https://edenic-budget-app.onrender.com)
+
+## Loom Walkthrough <a name="loom-walkthrough"></a>
+- [Loom Walkthrough](https://www.loom.com/share/2e3733a09bd74f9095e58694303d1287?sid=8d2b1164-2c34-45ca-bb5e-8b1495426c13)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
