@@ -1,4 +1,4 @@
-# Recipe App
+# Budget App
 
 <a name="readme-top"></a>
 
@@ -8,6 +8,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [Live Demo](#live-demo)
+  - [Loom Walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -22,9 +24,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Recipe App <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
-**Recipe App** is an app that keeps track of all users' recipes, ingredients, and inventory. It will allow the user to save ingredients, keep track of what they have, create recipes, and generate a shopping list based on what the user has and missing from a recipe.
+**Budget App** is a mobile web application where users can manage their budget: they have a list of transactions associated with a category so that they can see how much money they spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,10 +43,18 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create recipes**
-- **Show the list of recipes**
-- **Show the list of foods**
-- **Generate a shopping list**
+- **Create category**
+- **Show the list of categories**
+- **Create records**
+- **Show the list of records for that category**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Live Demo <a name="live-demo"></a>
+- [Live Demo](https://edenic-budget-app.onrender.com)
+
+## Loom Walkthrough <a name="loom-walkthrough"></a>
+- [Loom Walkthrough](https://www.loom.com/share/2e3733a09bd74f9095e58694303d1287?sid=8d2b1164-2c34-45ca-bb5e-8b1495426c13)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +79,7 @@ Clone this repository to your desired folder:
 ```sh
   cd my-preferred-folder
   
-  git clone https://github.com/binyamolango/recipe_app.git
+  git clone https://github.com/binyamolango/budget_app.git
 
 ```
 
@@ -78,7 +88,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd recipe_app
+  cd budget_app
   
   bundle install
 ```
@@ -118,11 +128,6 @@ To run tests, run the following command:
 - GitHub: [@binyamolango ](https://github.com/binyamolango)
 - LinkedIn: [Binyam Yohannes](https://www.linkedin.com/in/binyamyohannes/)
 
-👤 **Muhammad Bilal Liaquat**
-
-- GitHub: [@muhammadbilal ](https://github.com/BilalLiaquat7)
-- LinkedIn: [Muhammad Bilal](https://www.linkedin.com/in/muhammad-bilal-liaquat-87863390/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -151,7 +156,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank My God, family, friends, teammates, and Microverse.
+I would like to give credit to the author [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the original design idea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
