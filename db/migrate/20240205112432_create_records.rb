@@ -7,7 +7,7 @@ class CreateRecords < ActiveRecord::Migration[7.1]
       t.timestamps
     end
 
-    add_index :records, :name, unique: true
+    add_index :records, :id, unique: true
     add_reference :records, :author, null: false, foreign_key: { to_table: :users, on_delete: :cascade }
   end
 end

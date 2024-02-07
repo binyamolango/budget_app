@@ -7,7 +7,7 @@ class CreateCategories < ActiveRecord::Migration[7.1]
       t.timestamps
     end
 
-    add_index :categories, :name, unique: true
+    add_index :categories, :id, unique: true
     add_reference :categories, :user, null: false, foreign_key: { on_delete: :cascade }
   end
 end
