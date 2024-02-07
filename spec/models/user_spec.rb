@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:each) do
-    @user = User.create(name: "James White", email: "whitej@gmail.com", password: 123456);
+    @user = User.create(name: 'James White', email: 'whitej@gmail.com', password: 123_456)
   end
 
-  it "should have valid attributes" do
+  it 'should have valid attributes' do
     expect(@user).to be_valid
   end
 

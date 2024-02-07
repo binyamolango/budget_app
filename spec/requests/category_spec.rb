@@ -12,7 +12,7 @@ RSpec.describe 'Categories', type: :request do
     it 'assigns @categories with user categories' do
       user = create_user
       sign_in user
-      categories = create_list(:category, 3, user: user)
+      categories = create_list(:category, 3, user:)
 
       get categories_path
       expect(assigns(:categories)).to match_array(categories)
@@ -54,7 +54,7 @@ RSpec.describe 'Categories', type: :request do
     it 'returns a successful response' do
       user = create_user
       sign_in user
-      category = create(:category, user: user)
+      category = create(:category, user:)
 
       get category_path(category)
       expect(response).to be_successful

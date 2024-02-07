@@ -5,7 +5,7 @@ RSpec.describe 'records', type: :request do
     it 'returns a successful response' do
       user = create_user
       sign_in user
-      category = create(:category, user: user)
+      category = create(:category, user:)
 
       get new_category_record_path(category)
       expect(response).to be_successful
@@ -14,8 +14,8 @@ RSpec.describe 'records', type: :request do
     it 'assigns a new record to @record' do
       user = create_user
       sign_in user
-      category = create(:category, user: user)
-    
+      category = create(:category, user:)
+
       get new_category_record_path(category)
       expect(response).to be_successful
     end
@@ -25,8 +25,7 @@ RSpec.describe 'records', type: :request do
     it 'creates a new record with valid params' do
       user = create_user
       sign_in user
-      category = create(:category, user: user)
-      record_params = { name: 'New record', amount: 50 }
+      category = create(:category, user:)
 
       get new_category_record_path(category)
       expect(response).to be_successful
@@ -35,7 +34,7 @@ RSpec.describe 'records', type: :request do
     it 'renders new with unprocessable_entity for invalid params' do
       user = create_user
       sign_in user
-      category = create(:category, user: user)
+      category = create(:category, user:)
       invalid_params = { name: '', amount: '' }
 
       post category_records_path(category), params: { record: invalid_params }

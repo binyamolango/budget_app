@@ -1,6 +1,6 @@
 class RecordsController < ApplicationController
   load_and_authorize_resource
-  
+
   def new
     @category = Category.find(params[:category_id])
     @record = Record.new
