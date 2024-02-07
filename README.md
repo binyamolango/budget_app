@@ -156,7 +156,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank My God, family, friends, teammates, and Microverse.
+I would like to give credit to the author [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the original design idea
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
